@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noizy Lab | Photography / Videography</title>
+    
+    <meta name="description" content="Portfolio and social links for Noizy Lab">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#0a0a0a',
+                        brandLight: '#eaeaea',
+                        brandMuted: '#888888',
+                        brandBorder: '#333333'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="antialiased min-h-screen flex flex-col items-center justify-center p-4 selection:bg-brandLight selection:text-brandDark">
+
+    <main id="main-content" class="w-full max-w-md mx-auto pt-12 pb-20 fade-in-up">
+        
+        <header class="flex flex-col items-center mb-10 text-center">
+            <div class="w-28 h-28 mb-5 rounded-full overflow-hidden border-2 border-brandBorder shadow-xl relative group">
+                <img src="photos/ppwhiteonblack.png" alt="Profile Picture" class="w-full h-full object-cover transition-transform duration-500">
+            </div>
+            
+            <h1 class="text-3xl font-semibold tracking-tight mb-2">Noizy Lab</h1>
+            <p class="text-brandMuted text-sm font-light tracking-wide uppercase letter-spacing-2">Photography | Videography</p>
+        </header>
+
+        <section class="flex flex-col gap-4 w-full">
+            
+            <a href="https://www.youtube.com/@noizy_lab" target="_blank" rel="noopener noreferrer" class="link-card youtube flex items-center p-4 rounded-xl text-brandLight no-underline group">
+                <i class="ph ph-youtube-logo text-3xl transition-transform duration-300 group-hover:scale-110 group-hover:text-[#ff0000]"></i>
+                <span class="flex-grow text-center font-medium pr-8">YouTube</span>
+            </a>
+
+            <a href="https://instagram.com/noizy_lab" target="_blank" rel="noopener noreferrer" class="link-card instagram flex items-center p-4 rounded-xl text-brandLight no-underline group">
+                <i class="ph ph-instagram-logo text-3xl transition-transform duration-300 group-hover:scale-110 group-hover:text-[#E1306C]"></i>
+                <span class="flex-grow text-center font-medium pr-8">Instagram</span>
+            </a>
+
+            <a href="https://www.facebook.com/NoizyLab/" target="_blank" rel="noopener noreferrer" class="link-card facebook flex items-center p-4 rounded-xl text-brandLight no-underline group">
+                <i class="ph ph-facebook-logo text-3xl transition-transform duration-300 group-hover:scale-110 group-hover:text-[#1877F2]"></i>
+                <span class="flex-grow text-center font-medium pr-8">Facebook</span>
+            </a>
+
+            <a href="https://tiktok.com/@noizy_lab" target="_blank" rel="noopener noreferrer" class="link-card tiktok flex items-center p-4 rounded-xl text-brandLight no-underline group">
+                <i class="ph ph-tiktok-logo text-3xl transition-transform duration-300 group-hover:scale-110 group-hover:text-[#00f2fe]"></i>
+                <span class="flex-grow text-center font-medium pr-8">TikTok</span>
+            </a>
+
+        </section>
+
+        <footer class="mt-12 text-center">
+            <p class="text-[11px] text-brandMuted opacity-50 uppercase tracking-widest">© 2021 Noizy Lab</p>
+        </footer>
+
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Add slight delay for cinematic feel
+            setTimeout(() => {
+                document.getElementById('main-content').classList.add('visible');
+            }, 100);
+        });
+    </script>
+</body>
+</html>
